@@ -1,2 +1,2 @@
-# Chatter
-a chat website developed for final project
+# Arting
+a art website developed for final project
