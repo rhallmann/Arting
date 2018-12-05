@@ -27,11 +27,13 @@ if (!empty($_POST['id'])) {
 				$userRow = $statement2->fetch();
 
 				?>
-				<li><a href="view.php?id=<?= $row['postID'] ?>"><?= $row['pieceName'] ?> </a> BY : <?= $userRow['username'] ?></li>
-				<?php echo '<img src="data:image/png;base64,'.base64_encode( $row['pieceImage']  ).'"width=900/>'; ?>
-				<li><?= $row['description'] ?></li>
-				<li><?= $row['genre'] ?></li>
-				<li><?= $row['dateSubmitted'] ?></li>				
+				<ul style="background-color: lightgrey; text-align:center;">
+					<h2><a href="view.php?id=<?= $row['postID'] ?>"><?= $row['pieceName'] ?> </a> BY : <?= $userRow['username'] ?></h2>
+					<?php echo '<img src="data:image/png;base64,'.base64_encode( $row['pieceImage']  ).'"width=900 border="8"/>'; ?>
+					<p>Description : <?= $row['description'] ?></p>
+					<p>Genre: <?= $row['genre'] ?></p>
+					<p>Date Created : <?= $row['dateSubmitted'] ?></p>
+				</ul>			
 				<?php
 			}
 			break;
@@ -54,11 +56,13 @@ if (!empty($_POST['id'])) {
 				$userRow = $statement2->fetch();
 
 				?>
-				<li><a href="view.php?id=<?= $row['postID'] ?>"><?= $row['pieceName'] ?> </a> BY : <?= $userRow['username'] ?></li>
-				<?php echo '<img src="data:image/png;base64,'.base64_encode( $row['pieceImage']  ).'"width=900/>'; ?>
-				<li><?= $row['description'] ?></li>
-				<li><?= $row['genre'] ?></li>
-				<li><?= $row['dateSubmitted'] ?></li>
+				<ul style="background-color: lightgrey; text-align:center;">
+					<h2><a href="view.php?id=<?= $row['postID'] ?>"><?= $row['pieceName'] ?> </a> BY : <?= $userRow['username'] ?></h2>
+					<?php echo '<img src="data:image/png;base64,'.base64_encode( $row['pieceImage']  ).'"width=900 border="8"/>'; ?>
+					<p>Description : <?= $row['description'] ?></p>
+					<p>Genre: <?= $row['genre'] ?></p>
+					<p>Date Created : <?= $row['dateSubmitted'] ?></p>
+				</ul>
 				<?php
 			}
 			break;
@@ -81,11 +85,13 @@ if (!empty($_POST['id'])) {
 				$userRow = $statement2->fetch();
 
 				?>
-				<li><a href="view.php?id=<?= $row['postID'] ?>"><?= $row['pieceName'] ?> </a> BY : <?= $userRow['username'] ?></li>
-				<?php echo '<img src="data:image/png;base64,'.base64_encode( $row['pieceImage']  ).'"width=900/>'; ?>
-				<li><?= $row['description'] ?></li>
-				<li><?= $row['genre'] ?></li>
-				<li><?= $row['dateSubmitted'] ?></li>
+				<ul style="background-color: lightgrey; text-align:center;">
+					<h2><a href="view.php?id=<?= $row['postID'] ?>"><?= $row['pieceName'] ?> </a> BY : <?= $userRow['username'] ?></h2>
+					<?php echo '<img src="data:image/png;base64,'.base64_encode( $row['pieceImage']  ).'"width=900 border="8"/>'; ?>
+					<p>Description : <?= $row['description'] ?></p>
+					<p>Genre: <?= $row['genre'] ?></p>
+					<p>Date Created : <?= $row['dateSubmitted'] ?></p>
+				</ul>
 				<?php
 			}
 			break;
@@ -114,11 +120,13 @@ if (!empty($_POST['id'])) {
 				$userRow = $statement2->fetch();
 
 				?>
-				<li><a href="view.php?id=<?= $row['postID'] ?>"><?= $row['pieceName'] ?> </a> BY : <?= $userRow['username'] ?></li>
-				<?php echo '<img src="data:image/png;base64,'.base64_encode( $row['pieceImage']).'" width=900/>'; ?>
-				<li><?= $row['description'] ?></li>
-				<li><?= $row['genre'] ?></li>
-				<li><?= $row['dateSubmitted'] ?></li>
+				<ul style="background-color: lightgrey; text-align:center;">
+					<h2><a href="view.php?id=<?= $row['postID'] ?>"><?= $row['pieceName'] ?> </a> BY : <?= $userRow['username'] ?></h2>
+					<?php echo '<img src="data:image/png;base64,'.base64_encode( $row['pieceImage']  ).'"width=900 border="8"/>'; ?>
+					<p>Description : <?= $row['description'] ?></p>
+					<p>Genre: <?= $row['genre'] ?></p>
+					<p>Date Created : <?= $row['dateSubmitted'] ?></p>
+				</ul>
 
 				<?php
 			}

@@ -8,6 +8,10 @@
         <form action="processing.php" method="post">
             <div id="div_login">
                 <h1>Login</h1>
+
+                <ul id="menu">
+                    <li><a href="../index.php" >Homepage</a></li>
+                </ul>
                 <div>
                     <label for="username">username</label>
                     <input name="username" id="username" />

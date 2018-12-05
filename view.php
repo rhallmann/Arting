@@ -44,12 +44,14 @@ $post;
 
 		?>
 
-		<li><?= $row['pieceName'] ?> BY : <?= $userRow['username'] ?></li>
-		<?php echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['pieceImage']  ).'"/>'; ?>
-		<li><?= $row['description'] ?></li>
-		<li><?= $row['genre'] ?></li>
-		<li><?= $row['dateSubmitted'] ?></li>
+		<ul style="text-align:center;">
+			<h2><?= $row['pieceName'] ?> BY : <?= $userRow['username'] ?></h2>
 
+			<?php echo '<img src="data:image/png;base64,'.base64_encode( $row['pieceImage']  ).'"width=900 border="8"/>'; ?>
+			<p>Description : <?= $row['description'] ?></p>
+			<p>Genre: <?= $row['genre'] ?></p>
+			<p>Date Created : <?= $row['dateSubmitted'] ?></p>
+		</ul>
 	<?php endwhile ?>
 
 	<h2>Comments</h2>
@@ -78,11 +80,12 @@ $post;
 
 		?>
 
-		<li><?= $userRow['username'] ?></li>
-		<li><?= $row['comment']?></li>
-		<li>Posted : <?= $row['dateSubmitted'] ?></li>
-
+		<ul style="background-color:lightgrey; overflow:auto;">
+			<p><?= $userRow['username'] ?> Posted : <?= $row['dateSubmitted'] ?></p>
+			<p><?= $row['comment']?></p>
+		</ul>
+		
 	<?php endwhile ?>
 
-	</body>
-	</html>
+</body>
+</html>
